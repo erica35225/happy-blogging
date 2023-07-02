@@ -3,7 +3,7 @@ name: OWASP Dependency Checker
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   dependency-check:
