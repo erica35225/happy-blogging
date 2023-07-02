@@ -1,0 +1,15 @@
+name: OWASP Dependency Checker
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  dependency-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dependency-check/Dependency-Check_Action@v1
+        with:
+          scan-only: true
+          report-file: dependency-check-report.xml
