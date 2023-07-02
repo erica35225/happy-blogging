@@ -22,4 +22,10 @@ jobs:
         run: npm ci
 
       - name: Run OWASP Dependency Checker
-        run: npx retire
+        run: npx retire --outputformat json > report.json
+
+      - name: Save report artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Dependency Report
+          path: report.json
