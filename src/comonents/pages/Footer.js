@@ -13,6 +13,6 @@ export default function Footer() {
   //   </MDBFooter>;
   // }
   return (
-    <div>this is a footer</div>
+    <div>this is a footer !</div>
   );
 }
